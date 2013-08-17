@@ -59,7 +59,7 @@
         font-size: 18px;
         line-height: 24px;
       }
-
+     
       /* Video pitch and Action */
       .pitch {
         padding: 2.5% 0%;
@@ -166,17 +166,18 @@
           <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
 
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+        <!-- We define a new 'actions' div to contain
+         statistics, order, and share buttons.-->
         <div class="span5 actions">
           <div class="row-fluid">
-          <div class="span8 offset2">
+          <div class="span10 offset1">
             <div class="row-fluid statistics">
-              <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
+              <div class="span4">
                 <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                  <h3>1000</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
@@ -186,33 +187,43 @@
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
+                  <h3>10</h3> <p>days left</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="row-fluid">
-          <div class="span10 offset1">
+          <div class="span10 offset1 thermometer">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
+            <div class="progress active">
               <div class="bar bar-success" style="width: 60%;"></div>
               <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
           </div>
           <div class="row-fluid">
-          <div class="span6 offset3 order">
+          <div class="span10 offset1 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <!-- <button class="btn btn-success btn-large">Preorder</button> -->
-            
-            <a class="coinbase-button"
-               data-button-style="custom_large"
-               data-button-text="Preorder with Bitcoin"
-               data-code="7539e51f27ad17fd844877526d4c9c81" 
-               href="https://coinbase.com/checkouts/7539e51f27ad17fd844877526d4c9c81">Preorder With Bitcoin</a>
-               <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+            <!-- <button class="btn btn-success btn-large">Preorder
+            </button> -->
+            <div>
+            <a
+              class="coinbase-button"
+              data-button-style="custom_large"
+              data-button-text="Preorder with Bitcoin"
+              data-code="7539e51f27ad17fd844877526d4c9c81" 
+              href="https://coinbase.com/checkouts/
+              7539e51f27ad17fd844877526d4c9c81">
+              Preorder With Bitcoin
+            </a>
+            </div>
+               
+            <script
+              src="https://coinbase.com/assets/button.js"
+              type="text/javascript">
+            </script>
             
           </div>
           </div>
